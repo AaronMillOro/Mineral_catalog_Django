@@ -7,7 +7,7 @@ The repertory **'provided_data'** contains:
 * CSS file containing the pages style
 ## Project details
 
-* The minerals data is stored in a database using **SQLite**. A script creates the instance for each mineral in from the provided **JSON** file. Each mineral contains the following information:
+* The minerals data is stored in a database using **SQLite**. A script creates the instance for each mineral in from the provided **JSON** file. Each mineral contains some of the following information:
 
 	* name
 	* image filename
@@ -28,6 +28,7 @@ The repertory **'provided_data'** contains:
 	* refractive index
 	* crystal habit
 	* specific gravity
+	* group
 	
 * There is a layout template for the app.
 * The app contains a template and view to show the names of **all the minerals**.
