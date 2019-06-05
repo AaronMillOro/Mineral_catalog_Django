@@ -33,7 +33,7 @@ The repertory **'provided_data'** contains:
 * The app contains a template and view to show the names of **all the minerals**.
 
 * There is a details template and view. The latter displays the details of a selected mineral as showed below:
-![Details display example] (https://github.com/AaronMillOro/Mineral_catalog_Django/blob/master/provided_data/detail-preview.png) 
+![Details display](https://github.com/AaronMillOro/Mineral_catalog_Django/blob/master/provided_data/detail-preview.png) 
 
 * The name of each attribute in the details template is showed in **title case** by using a template filter.
 
