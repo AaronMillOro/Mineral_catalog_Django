@@ -1,21 +1,15 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
 from .models import Mineral
 
 
-def minerals_index(request):
+def index(request):
     """Get all minerals to display on main page"""
     minerals = Mineral.objects.order_by('name').all()
-    context = {
-        'minerals':minerals
-    }
-    # context dictionary sent to template
-    return render(request, 'minerals_index.html', context)
+    # 'minerals' is a dictionary sent to template
+    return render(request, 'index.html', {'minerals':minerals})
 
-def mineral_detail(request, pk):
+def mineral_details(request, pk):
     """Get details of each mineral"""
-    mineral = Mineral.objects.get(pk=pk)
-    context = {
-        'mineral': mineral
-    }
-    return render(request, 'mineral_detail.html', context)
+    mineral = get_object_or_404(Mineral, pk=pk)
+    return render(request, 'minerals/mineral_details.html', {'mineral':mineral})
