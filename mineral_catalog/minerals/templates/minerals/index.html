@@ -1,1 +1,13 @@
 {% extends 'layout.html' %}
+{% load static from staticfiles %}
+
+<!--Displays each project stored in the DB -->
+{% block content %}
+  <ul class="minerals__container">
+    {% for mineral in minerals %}
+      <li class="minerals__item">
+        <a class="minerals__anchor" href="{% url 'mineral_details' mineral.pk %}">{{ mineral.name }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

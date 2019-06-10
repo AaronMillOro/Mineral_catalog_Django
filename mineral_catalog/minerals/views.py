@@ -12,4 +12,4 @@ def index(request):
 def mineral_details(request, pk):
     """Get details of each mineral"""
     mineral = get_object_or_404(Mineral, pk=pk)
-    return render(request, 'minerals/mineral_details.html', {'mineral':mineral})
+    return render(request, 'mineral_details.html', {'mineral':mineral})

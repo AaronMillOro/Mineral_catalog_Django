@@ -15,7 +15,7 @@
 <body>
   <div class="bounds">
     <div class="grid-100">
-      <a href="minerals/index.html">
+      <a href="{% url 'index' %}">
         <svg class="logo" viewBox="0 0 127.6 84.8" preserveAspectRation="xMinYMin meet">
           <polygon points="42.7,84.8 49.6,79.4 40,62.5 51.2,43.5 51.2,43.5 25,0 0,55.6 "/>
           <polygon class="logo--middle" points="52.9,79.5 52.9,79.5 84.8,80.1 59.7,35 43.3,62.4 "/>
@@ -27,19 +27,7 @@
     </div>
 
     <div class="grid-100">
-      {% block content %}
-      <ul class="minerals__container">
-        <li class="minerals__item">
-          <a class="minerals__anchor" href="detail.html">Abelsonite</a>
-        </li>
-        <li class="minerals__item">
-          <a class="minerals__anchor" href="detail.html">Abelsonite</a>
-        </li>
-        <li class="minerals__item">
-          <a class="minerals__anchor" href="detail.html">Abelsonite</a>
-        </li>
-      </ul>
-      {% endblock %}
+      {% block content %} {% endblock %}
     </div>
   </div>
   <div class="minerals__random">
