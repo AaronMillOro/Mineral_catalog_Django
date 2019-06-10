@@ -43,7 +43,7 @@ The  **provided data** includes:
 
 * The templates match the style used in the [example files](https://github.com/AaronMillOro/Mineral_catalog_Django/tree/master/provided_data/example/).
 
-* The most common features (**name, group, category, formula**) were estimated from the constructed function:
+* The most common features (**name, group, category, formula**) were estimated, and displayed first in **mineral_details** page, from the constructed function:
 
 > python3 manage.py statistics_data
 
