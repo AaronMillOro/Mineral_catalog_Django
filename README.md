@@ -35,10 +35,16 @@ The  **provided data** includes:
 * The app contains a template and view to show the names of **all the minerals**: **/index.html**.
 
 * There is a details template and view. The latter displays the details of a selected mineral as showed below:
-![Details display](https://github.com/AaronMillOro/Mineral_catalog_Django/blob/master/provided_data/detail-preview.png =200x300) 
+![Details display](https://github.com/AaronMillOro/Mineral_catalog_Django/blob/master/provided_data/detail-preview.png=200x300) 
 
 * The name of each attribute in the details template is showed in **title case** by using a template filter.
 
 * Unit tests were performed to test that each view is displaying the correct information.
 
 * The templates match the style used in the [example files](https://github.com/AaronMillOro/Mineral_catalog_Django/tree/master/provided_data/example/).
+
+* The **top3** most common features were estimated from the constructed function:
+
+> python3 manage.py statistics_data
+
+![Figure display](https://github.com/AaronMillOro/Mineral_catalog_Django/blob/master/mineral_catalog/minerals/resources/data.png)
