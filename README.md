@@ -35,7 +35,7 @@ The  **provided data** includes:
 * The app contains a template and view to show the names of **all the minerals**: **/index.html**.
 
 * There is a details template and view. The latter displays the details of a selected mineral as showed below:
-![Details display](https://github.com/AaronMillOro/Mineral_catalog_Django/blob/master/provided_data/detail-preview.png=200x300) 
+![Details display](https://github.com/AaronMillOro/Mineral_catalog_Django/blob/master/provided_data/detail-preview.png) 
 
 * The name of each attribute in the details template is showed in **title case** by using a template filter.
 
@@ -43,8 +43,30 @@ The  **provided data** includes:
 
 * The templates match the style used in the [example files](https://github.com/AaronMillOro/Mineral_catalog_Django/tree/master/provided_data/example/).
 
-* The **top3** most common features were estimated from the constructed function:
+* The most common features (**name, group, category, formula**) were estimated from the constructed function:
 
 > python3 manage.py statistics_data
 
 ![Figure display](https://github.com/AaronMillOro/Mineral_catalog_Django/blob/master/mineral_catalog/minerals/resources/data.png)
+
+## Test the application in terminal
+
+1. Install and run 'pipenv' 
+
+		1 pipenv install
+		2 pipenv shell
+
+2. Download the corresponding dependencies in the virtual environment 
+
+		3 pip install -r requirements.txt
+		4 pipenv graph
+
+3. In the root directory (Mineral_Catalog_Django/mineral_catalog/) run the application
+		
+		5 python3 manage.py runserver 0.0.0.0:5000
+
+4. Open your favorite web browser and type
+
+		http://localhost:5000
+
+Enjoy! :shipit:
