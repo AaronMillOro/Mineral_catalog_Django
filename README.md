@@ -1,10 +1,11 @@
 # Mineral catalog
 This project is a website that displays information about various minerals (AKA rocks). The home page of the site contains a list of all of the minerals in a database (JSON file). Clicking on a mineral’s name opens a page that displays information about the mineral.
-The repertory **'provided_data'** contains:
+The  **provided data** includes:
 
-* A JSON file containing the information of each rock
-* HTML files as examples of the expected final output
-* CSS file containing the pages style
+* A [JSON file](https://github.com/AaronMillOro/Mineral_catalog_Django/blob/master/mineral_catalog/minerals/resources/minerals.json) containing the information of each rock
+* HTML examples of the expected result
+* The [figures](https://github.com/AaronMillOro/Mineral_catalog_Django/tree/master/mineral_catalog/minerals/statics/img) for each mineral
+* [CSS file](https://github.com/AaronMillOro/Mineral_catalog_Django/tree/master/mineral_catalog/static/css) containing the pages style
 ## Project details
 
 * The minerals data is stored in a database using **SQLite**. A script creates the instance for each mineral in from the provided **JSON** file. Each mineral contains some of the following information:
