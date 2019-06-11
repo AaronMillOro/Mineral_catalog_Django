@@ -34,12 +34,12 @@ The  **provided data** includes:
 * There is a layout template for the app.
 * The app contains a template and view to show the names of **all the minerals**: **/index.html**.
 
-* There is a details template and view. The latter displays the details of a selected mineral as showed below:
+* There is a details template/view. The latter displays the details of a selected mineral as showed below:
 ![Details display](https://github.com/AaronMillOro/Mineral_catalog_Django/blob/master/provided_data/detail-preview.png) 
 
 * The name of each attribute in the details template is showed in **title case** by using a template filter.
 
-* Unit tests were performed to test that each view is displaying the correct information.
+* Unit tests were performed to test that each view is displaying the correct information ( >50% [coverage](https://github.com/AaronMillOro/Mineral_catalog_Django/blob/master/mineral_catalog/htmlcov/index.html) ).
 
 * The templates match the style used in the [example files](https://github.com/AaronMillOro/Mineral_catalog_Django/tree/master/provided_data/example/).
 
@@ -51,7 +51,7 @@ The  **provided data** includes:
 
 ## Test the application in terminal
 
-1. Install and run 'pipenv' 
+1. Set the repertory **mineral_catalog/**, install and run 'pipenv' 
 
 		1 pipenv install
 		2 pipenv shell
@@ -67,6 +67,6 @@ The  **provided data** includes:
 
 4. Open your favorite web browser and type
 
-		http://localhost:5000
+		http://localhost:5000/index
 
 Enjoy! :shipit:
