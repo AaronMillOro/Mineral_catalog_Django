@@ -1,6 +1,10 @@
 {% extends 'layout.html' %}
 {% load static from staticfiles %}
 
+{% block extrahead %}
+<link rel="stylesheet" href='{% static "css/mineral.css" %}'>
+{% endblock %}
+
 {% block content %}
 <div class="grid-100 mineral__container">
   <h1 class="mineral__name">{{ mineral.name|title }} </h1>
